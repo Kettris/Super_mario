@@ -4,10 +4,10 @@
 #include "enemy.hpp"
 
 namespace biv {
-	class ConsoleEnemy : public Enemy, public ConsoleUIObjectRectAdapter {
-		public:
-			ConsoleEnemy(const Coord& top_left, const int width, const int height);
+class ConsoleEnemy : public Enemy, public ConsoleUIObjectRectAdapter {
+public:
+    ConsoleEnemy(const Coord& top_left, const int width, const int height);
 
-			char get_brush() const noexcept override;
-	};
+    char get_brush() const noexcept override;
+};
 }

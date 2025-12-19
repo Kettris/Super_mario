@@ -1,8 +1,8 @@
 #pragma once
 
 namespace biv {
-	struct Speed {
-		float v;
-		float h;
-	};
+struct Speed {
+    float v;
+    float h;
+};
 }

@@ -4,10 +4,10 @@
 #include "money.hpp"
 
 namespace biv {
-	class ConsoleMoney : public Money, public ConsoleUIObjectRectAdapter {
-		public:
-			ConsoleMoney(const Coord& top_left, const int width, const int height);
+class ConsoleMoney : public Money, public ConsoleUIObjectRectAdapter {
+public:
+    ConsoleMoney(const Coord& top_left, const int width, const int height);
 
-			char get_brush() const noexcept override;
-	};
+    char get_brush() const noexcept override;
+};
 }
