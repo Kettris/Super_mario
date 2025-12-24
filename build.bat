@@ -4,7 +4,7 @@ setlocal
 echo Building Super Mario...
 
 set BUILD_TYPE="Ninja"
-set BUILD_FOLDER=build_ninja
+set BUILD_FOLDER=build_qt_game
 set SOURCE_FOLDER=src
 
 if exist %BUILD_FOLDER% (
@@ -15,7 +15,7 @@ if exist %BUILD_FOLDER% (
 mkdir %BUILD_FOLDER%
 cd %BUILD_FOLDER%
 
-echo Configuring CMake for main game...
+echo Configuring CMake...
 cmake -G %BUILD_TYPE% ..\%SOURCE_FOLDER%
 if %ERRORLEVEL% NEQ 0 (
     echo CMake configuration failed!
@@ -23,7 +23,7 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-echo Building game...
+echo Building...
 cmake --build .
 if %ERRORLEVEL% NEQ 0 (
     echo Build failed!
@@ -33,46 +33,13 @@ if %ERRORLEVEL% NEQ 0 (
 
 cd ..
 
-echo.
-echo Building Qt launcher...
-
-set QT_BUILD_FOLDER=build_qt
-set QT_SOURCE_FOLDER=src/qt
-
-if exist %QT_BUILD_FOLDER% (
-    rmdir /s /q %QT_BUILD_FOLDER%
-)
-
-mkdir %QT_BUILD_FOLDER%
-cd %QT_BUILD_FOLDER%
-
-echo Configuring CMake for Qt launcher...
-cmake -G %BUILD_TYPE% ..\%QT_SOURCE_FOLDER%
-if %ERRORLEVEL% NEQ 0 (
-    echo Qt CMake configuration failed!
-    pause
-    exit /b 1
-)
-
-echo Building Qt launcher...
-cmake --build .
-if %ERRORLEVEL% NEQ 0 (
-    echo Qt build failed!
-    pause
-    exit /b 1
-)
-
-cd ..
-
-echo.
-echo Build successful!
-echo.
-
-if exist "build_qt\super_mario_launcher.exe" (
-    echo Running launcher...
-    start "" "build_qt\super_mario_launcher.exe"
+if exist "%BUILD_FOLDER%\super_mario.exe" (
+    echo.
+    echo Build successful! Running super_mario.exe...
+    start "" "%BUILD_FOLDER%\super_mario.exe"
 ) else (
-    echo Error: Launcher executable not found!
+    echo.
+    echo Error: Executable not found!
 )
 
 pause

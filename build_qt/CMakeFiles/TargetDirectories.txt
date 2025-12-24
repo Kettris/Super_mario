@@ -1,5 +1,0 @@
-C:/1Super_mario/build_qt/CMakeFiles/super_mario_launcher.dir
-C:/1Super_mario/build_qt/CMakeFiles/edit_cache.dir
-C:/1Super_mario/build_qt/CMakeFiles/rebuild_cache.dir
-C:/1Super_mario/build_qt/CMakeFiles/super_mario_launcher_autogen_timestamp_deps.dir
-C:/1Super_mario/build_qt/CMakeFiles/super_mario_launcher_autogen.dir

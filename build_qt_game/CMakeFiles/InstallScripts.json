@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/_IT/Code/Super_mario/build_qt_game/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

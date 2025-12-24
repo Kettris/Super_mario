@@ -1,0 +1,5 @@
+C:/_IT/Code/Super_mario/build_qt_game/CMakeFiles/super_mario.dir
+C:/_IT/Code/Super_mario/build_qt_game/CMakeFiles/edit_cache.dir
+C:/_IT/Code/Super_mario/build_qt_game/CMakeFiles/rebuild_cache.dir
+C:/_IT/Code/Super_mario/build_qt_game/CMakeFiles/super_mario_autogen_timestamp_deps.dir
+C:/_IT/Code/Super_mario/build_qt_game/CMakeFiles/super_mario_autogen.dir

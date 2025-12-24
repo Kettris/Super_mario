@@ -1,8 +1,0 @@
-# ninja log v7
-5	602	7878852652670659	super_mario_launcher_autogen/timestamp	eeb570aa83fba736
-5	602	7878852652670659	super_mario_launcher_autogen/mocs_compilation.cpp	eeb570aa83fba736
-5	602	7878852652670659	C:/1Super_mario/build_qt/super_mario_launcher_autogen/timestamp	eeb570aa83fba736
-5	602	7878852652670659	C:/1Super_mario/build_qt/super_mario_launcher_autogen/mocs_compilation.cpp	eeb570aa83fba736
-606	654	7878852652983098	CMakeFiles/super_mario_launcher.dir/super_mario_launcher_autogen/mocs_compilation.cpp.obj	4dae1ba808669f32
-607	2879	7878852652983098	CMakeFiles/super_mario_launcher.dir/main.cpp.obj	8b3a546beaaa7e0f
-2879	3004	7878852675790251	super_mario_launcher.exe	d6adbaa6357d2f98
